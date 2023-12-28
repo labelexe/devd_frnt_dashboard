@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+@import "https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap/stories/3/0";
+
+:root {
+  --font-family: "SF Pro Display", -apple-system, BlinkMacSystemFont, Roboto, sans-serif;
+  font-size: 14px;
+  /**/
+  --text-primary-color: #fff;
+  --text-second-color: #bababa;
+  --bg-primary-color: #05091a;
+  --bg-second-color: #040613;
+  --bg-separate-color: #13162f;
+  /*--bg-connect-color: #0A84FF;*/
+  --bg-connect-color: #0A84FF;
+
+  --accent-color: #6271FF;
+
+  --stories-bd-radius: 18px;
+  --stories-bd-bg-grd: linear-gradient(#00C1FEFF, #2FF4FFFC, #66F7FFFF, #BF73E4FF);
+  --stories-bd-bg-unic-grd: radial-gradient(496% 571.1% at -112% 78%, #eb9c00 0, #ff4769 27.08%, #3d50ff 66.38%, #00b3ff 100%);
+}
+
+
+:focus {
+  outline: none;
+}
+
+
+html {
+  font-family: "Open Sans", sans-serif;
+  background: #FFFFFF !important;
+  margin: 0;
+  padding: 0;
+  touch-action: manipulation;
+  font-feature-settings: "rlig" 1, "calt" 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--bg-primary-color);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  background: var(--bg-primary-color);
+  color: var(--text-primary-color);
+}
+
+body, body a {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+body a {
+  text-decoration: none;
+  color: var(--bg-primary-color);
+  cursor: pointer
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: color, background .4s ease-in-out;
+  font-family: var(--font-family);
+}
+
+button {
+  border-radius: 13px;
+  color: var(--accent-color);
+  background: var(--bg-second-color);
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+}
+
+.AppLw {
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.imgAva {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+  max-height: 40px;
+  /*  */
+  border: 1.15px solid #D7DDE2;
+}
+
+.imgBordered {
+  border-radius: 50%;
+}
+
+.badgeText {
+  background: var(--bg-second-color);
+  color: var(--text-primary-color);
+  border-radius: 10px;
+  padding: 2px 1vh;
+}
+
+table.vgt-table{
+  border: none;
+  background: transparent;
+}
+
+.vgt-table.bordered td, .vgt-table.bordered th {
+  background: var(--bg-primary-color);
+  border: solid 1px var(--bg-separate-color);
+  border-radius: 6px;
+  overflow: hidden;
+}
